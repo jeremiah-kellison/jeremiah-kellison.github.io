@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Person GitHub Page</title>
-    <link rel="stylesheet" href="style.css" 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="style.css" <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined|:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
@@ -21,20 +20,54 @@
                     <li><a href="#portfolio">Portfolio</a> </li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <svg class = xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 -960 960 960"onclick="openmenu()">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
             </nav>
             <div class="header-text">
                 <p>Web Developer</p>
                 <h1>Hi, I'm <span>Jeremiah</span> Kellison</h1>
             </div>
         </div>
-    </div>
-    <div class="wrapper">
-        <div class="icon facebook">
-            <div class="tooltip">Facebook</div>
-            <span><i class="fav fa-facebook-f"></i></span>
+        <div class="socialmediaicon">
+
+
+            <ul class="wrapper">
+                <li class="icon facebook">
+                    <span class="tooltip">Facebook</span>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </li>
+                <li class="icon twitter">
+                    <span class="tooltip">Twitter</span>
+                    <span><i class="fab fa-twitter"></i></span>
+                </li>
+                <li class="icon instagram">
+                    <span class="tooltip">Instagram</span>
+                    <span><i class="fab fa-instagram"></i></span>
+                </li>
+                <li class="icon github">
+                    <span class="tooltip">Github</span>
+                    <span><i class="fab fa-github"></i></span>
+                </li>
+                <li class="icon youtube">
+                    <span class="tooltip">Youtube</span>
+                    <span><i class="fab fa-youtube"></i></span>
+                </li>
+            </ul>
+
+
         </div>
     </div>
+
+
+    <!----------------Social Media ToolBar, From Codepen: https://codepen.io/abdelrhmansaid/pen/OJRNOpQ-->
+
+
+
+
+
+
     <!--------------about---------------->
     <div id="about">
         <div class="container">
@@ -131,18 +164,18 @@
 
         }
 
-    
+
 
     </script>
 
     <script>
         var sidemenu = document.getElementById("sidemenu");
 
-        function openmenu(){
+        function openmenu() {
             sidemenu.style.right = "0";
         }
 
-        function closemenu(){
+        function closemenu() {
             sidemenu.style.right = "-200px";
         }
 
