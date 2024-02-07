@@ -1,104 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Person GitHub Page</title>
-    <link rel="stylesheet" href="style.css"
-</head>
+    <link rel="stylesheet" href="style.css" </head>
+
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="" class="logo">
-            <ul>
-                <li><a href="#">Home</a> </li>
-                <li><a href="#">About</a> </li>
-                <li><a href="#">Services</a> </li>
-                <li><a href="#">Portfolio</a> </li>
-                <li><a href="#">Contact</a> </li>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">About</a> </li>
+                    <li><a href="#">Services</a> </li>
+                    <li><a href="#">Portfolio</a> </li>
+                    <li><a href="#">Contact</a> </li>
 
-            </ul>
-        </nav>
-        <div class="header-text">
-            <p>Web Developer</p>
-            <h1>Hi, I'm <span>Jeremiah</span> Kellison</h1>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Jeremiah</span> Kellison</h1>
+            </div>
         </div>
     </div>
-</div>
-<!--------------about---------------->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/user.png">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Hi! My name is a Jeremiah Kellison, I am a 17 year old aspiring computer programmer. I enjoying doing web development and design. 
-                I have plans on majoring in Computer Scince in college to contuine my carrer in this field. 
-                This website is an ongoing project and portfolio for me to hold all my work! Hope you enjoy
-                </p>
+    <!--------------about---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi! My name is a Jeremiah Kellison, I am a 17 year old aspiring computer programmer. I enjoying
+                        doing web development and design.
+                        I have plans on majoring in Computer Scince in college to contuine my carrer in this field.
+                        This website is an ongoing project and portfolio for me to hold all my work! Hope you enjoy
+                    </p>
 
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick ="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick ="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick ="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab javascript" id="skills">
-                    <ul>
-                        <li><span>Javascript</span><br>Close to fluent in base level Javascript</li>
-                        
-                    </ul>
-                </div>
-                <div class="tab-contents experience" id="experience">
-                    <ul>
-                        <li><span>N/A</span><br>No Current Experience</li>
-                    </ul>
-                </div>
-                <div class="tab-contents education" id="education">
-                    <ul>
-                        <li><span>2021 - Current</span><br>Attending High School at Sonoma Academy</li>
-                    </ul>
-                </div>
-            </div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab javascript" id="skills">
+                        <ul>
+                            <li><span>Javascript</span><br>Close to fluent in base level Javascript</li>
 
+                        </ul>
+                    </div>
+                    <div class="tab-contents experience" id="experience">
+                        <ul>
+                            <li><span>N/A</span><br>No Current Experience</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents education" id="education">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Attending High School at Sonoma Academy</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-</div>
 
-<!-----------------portfolio-------->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
+    <!-----------------portfolio-------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="Work-1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit </p>
+                        <p><a href="www.google.com"><i class="fas fa-external-link-alt"></i></a></p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="Work-1">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit </p>
+                        <a href="www.google.com"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="Work-1">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit </p>
+                        <a href="www.google.com"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-</div>
 
+    <script>
 
-<script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabName) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
 
-    function opentab(tabName){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
 
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabName).classList.add("active-tab");
-
-    }
 
 
 
-</script>
+    </script>
 
 
 </body>
+
 </html>
