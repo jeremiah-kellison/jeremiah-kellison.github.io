@@ -171,8 +171,12 @@ nav ul li a:hover::after{
 }
 .work img{
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     display: block;
+    object-fit: cover;
+
+    
 
 }
 
@@ -202,10 +206,12 @@ nav ul li a:hover::after{
     font-size: 55px;
     color:#ff004f ;
     margin-bottom: 15px;
+    text-align: center;
 }
 .layer p {
     font-size: 19px;
     color: #fff;
+    text-align: center;
 }
 .layer > *{
     transform: translateY(25px);
@@ -214,6 +220,12 @@ nav ul li a:hover::after{
 .layer:hover > *{
     transform: translateY(0px);
     
+}
+#externallink{
+    text-align: center;
+    display:inline-block;
+    text-decoration: none !important;
+    margin-top: 15px;
 }
 .btn{
     display: block;
