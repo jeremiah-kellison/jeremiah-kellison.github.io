@@ -373,9 +373,11 @@ nav .mobilemenu{
         position:relative;
         bottom: 190px;
         left: 5px;
+        z-index: 999;
     }
     nav ul{
         background: #ff004f;
+        
         position: fixed;
         top:  0px;
         right: -200px;
@@ -412,6 +414,17 @@ nav .mobilemenu{
         font-size: 16px;
         margin-right: 20px;
     }
+    .work img{
+        width: 200;
+        height: 400px;
+        object-fit: cover;
+
+    }
+    .wrapper{
+        position: relative;
+        right: 100px;
+    }
+    
     
 }
 
